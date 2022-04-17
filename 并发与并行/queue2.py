@@ -3,7 +3,7 @@
 # @Author : huichuan LI
 # @File : queue2.py
 # @Software: PyCharm
-from queue import Queue
+from queue3 import Queue
 from threading import Thread
 
 my_queue = Queue()
