@@ -146,9 +146,9 @@ def simulate_pipeline(grid, in_queue, out_queue):
     return next_grid
 
 
-# Clear the sentinel object from the out queue
-for _ in out_queue:
-    pass
+# # Clear the sentinel object from the out queue
+# for _ in out_queue:
+#     pass
 
 
 # Restore the working version of this function
@@ -206,8 +206,8 @@ for i in range(5):
     grid = simulate_pipeline(grid, in_queue, out_queue)
 
 print(columns)
-#
-# for thread in threads:
-#     in_queue.close()
-# for thread in threads:
-#     thread.join()
+
+for thread in threads:
+    in_queue.close()
+for thread in threads:
+    thread.join()
