@@ -164,3 +164,10 @@ def change_func_complex(func):
 print(func_complex(10))
 func_complex_new = change_func_complex(func_complex)
 print(func_complex_new(100))
+
+import numpy as np
+
+
+def softmax(vec):
+    vec = vec - vec.max(vec)
+    return np.exp(vec) / np.sum(np.exp(vec))
